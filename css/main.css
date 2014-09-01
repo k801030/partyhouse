@@ -9,3 +9,35 @@ body, html {
 	background: url(../images/bg.jpg) no-repeat center center scroll;
 	background-size: cover;
 }
+
+.floor {
+	position: relative;
+	width: 100%;
+	height: 400px;
+}
+.floor p.subtitle{
+	font-size: 30px;
+	text-align: center;
+	color: rgba(1,1,1,0.5);
+}
+.floor.second{
+	background-color: #dbb67a;
+}
+.floor.third{
+	background-color: #55bada;
+}
+.floor.fourth{
+	background-color: #b7c3d0;
+}
+
+
+#chris-chen {
+	position: absolute;
+	
+	right: 10%;
+	width: 480px;
+	height: 320px;
+	background-image: url(../images/chrischen.png) ;
+	background-size:  480px 320px;
+	z-index: 100;
+}
