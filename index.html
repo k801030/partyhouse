@@ -6,8 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link href="css/bootstrap.min.css" rel="stylesheet" />
+	<link href="css/animate.css" rel="stylesheet" />
 	<link href="css/main.css" rel="stylesheet" />
 	
+ 	<script src="http://code.jquery.com/jquery.js"></script>
+
 	<title>開趴囉</title>
 </head>
 
@@ -26,7 +29,49 @@
 		<div class="container">
 			<div class="row">
 				<p class="subtitle">2 Floor </p>
-				<div id="chris-chen"></div>
+
+				<div class="col-md-12 profile border red">
+					<div class="col-md-6">
+						<div class="info-text left border">
+							<div class="member-name">陳政斌</div>
+							<div class="member-department">光電所</div>
+							<div class="member-term">吃飯 睡覺 打東東</div>
+						</div>
+						<div class="">
+							<div class="info-img border">
+							</div>
+							<div class="info-img border">
+							</div>
+							<div class="info-img border">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-offset-1 col-md-5">
+						<div class="img-right border" id="chris-chen"></div>
+					</div>
+				</div>
+
+				<div class="col-md-12 profile border red">			
+					<div class="col-md-offset-1 col-md-5">
+						<div class="img-left border" id="chris-chen"></div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="info-text right border">
+							<div class="member-name">陳政斌</div>
+							<div class="member-department">光電所</div>
+							<div class="member-term">吃飯 睡覺 打東東</div>
+						</div>
+						<div class="">
+							<div class="info-img border">
+							</div>
+							<div class="info-img border">
+							</div>
+							<div class="info-img border">
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -51,5 +96,24 @@
 	<script type="text/javascript" src="js/main.js"></script>
 
 </body>
+
+
+<script src="js/viewportchecker.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.img-right').addClass('myHidden').viewportChecker({
+        	classToAdd: 'animated-2s fadeInRight',
+        	offset: 100,
+        	repeat: false
+        });
+
+        $('.img-left').addClass('myHidden').viewportChecker({
+        	classToAdd: 'animated-2s fadeInLeft',
+        	offset: 100,
+        	repeat: false
+        });
+
+    });       
+</script>
 
 </html>

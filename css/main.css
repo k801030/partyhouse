@@ -2,6 +2,10 @@ body, html {
 	height: 100%;
 }
 
+.col {
+	float: left;
+}
+
 .header {
 	position: relative;
 	width: 100%;
@@ -13,31 +17,113 @@ body, html {
 .floor {
 	position: relative;
 	width: 100%;
-	height: 400px;
+	height: 640px;
+	box-shadow:4px 4px 3px rgba(20%,20%,40%,0.5);
 }
 .floor p.subtitle{
 	font-size: 30px;
 	text-align: center;
 	color: rgba(1,1,1,0.5);
+	margin: 10px;
+	padding: 10px 0 10px 0;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background-color: #29afdf;
 }
 .floor.second{
-	background-color: #dbb67a;
+  z-index: 200;
+  background: -webkit-radial-gradient(ellipse farthest-corner, white 32.6%, #d4d3cf 78.1%) #fff;
+  background: -moz-radial-gradient(ellipse farthest-corner, hsla(0.13,0.12,0.52) 32.6%, hsla(0.13,0.12,0.2) 78.1%) #fff;
+  background: -ms-radial-gradient(ellipse farthest-corner, hsla(0.13,0.12,0.52) 32.6%, hsla(0.13,0.12,0.92) 78.1%) #fff;
+  background: radial-gradient(ellipse farthest-corner, hsla(0.13,0.12,0.52) 32.6%, red 78.1%) #fff;
 }
 .floor.third{
+	z-index: 300;
 	background-color: #55bada;
 }
 .floor.fourth{
+	z-index: 400;
 	background-color: #b7c3d0;
 }
 
 
+.profile {
+	margin: 10px;
+}
+
+.info-text {
+	position: relative;
+	margin: 20px 20px 10px 20px;
+	font-size: 18px;
+	text-align: center;
+}
+.info-text.left{
+	text-align: right;
+}
+.info-text.right{
+	text-align: left;
+}
+
+.info-img {
+	position: relative;
+	float: left;
+	width: 100px;
+	height: 100px;
+	margin: 10px 20px 20px 20px;
+	border: 2px #bbb solid;
+	box-shadow: 1px 1px 1px 0.5px rgba(20%,20%,40%,0.5);
+}
+.img-right, .img-left{
+	position: relative;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+
 #chris-chen {
-	position: absolute;
-	
-	right: 10%;
-	width: 480px;
-	height: 320px;
+	width: 360px;
+	height: 240px;
 	background-image: url(../images/chrischen.png) ;
-	background-size:  480px 320px;
+	background-size:  360px 240px;
 	z-index: 100;
 }
+
+.border {
+	border: 3px #bbb dashed;
+}
+.border.red {
+	border: 3px red dashed;
+}
+
+.border.blue {
+	border: 3px blue dashed;
+}
+
+
+.member-name { 
+	font-size: 18px; 
+	color: #4b4b4b !important; 
+	font-weight: 600; 
+	text-transform: uppercase; 
+	margin: 0px 0 20px 0px; 
+	line-height: 20px;
+}
+
+.member-department { 
+	font-size: 12px; 
+	margin: 3px 0 10px 0; 
+	color: #279fbb; 
+	font-weight: lighter; 
+	text-transform: uppercase;
+}
+
+.member-term { 
+	font-size: 11px; 
+	margin: 3px 0 10px 0; 
+	color: #888; 
+	font-weight: lighter; 
+}
+
+
