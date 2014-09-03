@@ -2,6 +2,11 @@ body, html {
 	height: 100%;
 }
 
+.pattern {
+	background-image: url('../images/pattern-1.png');
+	background-repeat: repeat;
+	background-position: left top;
+}
 .col {
 	float: left;
 }
@@ -57,29 +62,29 @@ body, html {
 }
 .floor.second{
   z-index: 200;
-  background: -webkit-radial-gradient(ellipse farthest-corner, white 32.6%, #d4d3cf 78.1%) #fff;
-  background: -moz-radial-gradient(ellipse farthest-corner, hsla(0.13,0.12,0.52) 32.6%, hsla(0.13,0.12,0.2) 78.1%) #fff;
-  background: -ms-radial-gradient(ellipse farthest-corner, hsla(0.13,0.12,0.52) 32.6%, hsla(0.13,0.12,0.92) 78.1%) #fff;
-  background: radial-gradient(ellipse farthest-corner, hsla(0.13,0.12,0.52) 32.6%, red 78.1%) #fff;
+  
 }
 .floor.third{
-	z-index: 300;
-	background-color: #55bada;
+  z-index: 300;
+  background: -webkit-radial-gradient(ellipse farthest-corner, white 32.6%, #94d4e8 78.1%) #fff;
+  background: -moz-radial-gradient(ellipse farthest-corner, hsla(0.13,0.12,0.52) 32.6%, #94d4e8 78.1%) #fff;
+  background: -ms-radial-gradient(ellipse farthest-corner, hsla(0.13,0.12,0.52) 32.6%, #94d4e8 78.1%) #fff;
+  background: radial-gradient(ellipse farthest-corner, hsla(0.13,0.12,0.52) 32.6%, #94d4e8 78.1%) #fff;
 }
 .floor.fourth{
-	z-index: 400;
-	background-color: #b7c3d0;
+  z-index: 400;
+
 }
 
 
 .profile {
-	margin: 10px 0 10px 0;
+	margin: 15px 0 15px 0;
 }
 
 .info-block {
 	position: relative;
 	height: 120px;
-	margin: 20px 20px 10px 20px;
+	margin: 5px 20px 5px 20px;
 	font-size: 18px;
 	text-align: center;
 }
@@ -92,18 +97,25 @@ body, html {
 
 
 .info-img {
+	overflow: hidden;
 	position: relative;
 	width: 100px;
 	height: 100px;
 	margin: 10px 20px 20px 20px;
 	box-shadow: 1px 1px 1px 0.5px rgba(20%,20%,40%,0.5);
 }
+.info-img > img {
+	height: auto;
+	width: 100px;
+}
+
 .info-block.left  > .info-img{
 	float: right;
 }
 .info-block.right  > .info-img{
 	float: left;
 }
+
 
 .img-right, .img-left{
 	position: relative;
@@ -112,14 +124,26 @@ body, html {
 	border-radius: 5px;
 }
 
+/* ====== Profile ====== */
 
 #chris-chen {
-	width: 360px;
+	width: auto;
 	height: 240px;
-	background-image: url(../images/chrischen.png) ;
-	background-size:  360px 240px;
+	background-image: url(../images/profile/chrischen.png) ;
+	background-repeat: no-repeat;
+	background-size:  auto 240px;
 	z-index: 100;
 }
+
+#lao-pao-gi {
+	width: auto;
+	height: 240px;
+	background-image: url(../images/profile/laopaogi.jpg);
+	background-repeat: no-repeat;
+	background-size:  auto 240px;
+	z-index: 100;
+}
+
 
 .border {
 	border: 3px #bbb dashed;
@@ -134,7 +158,7 @@ body, html {
 
 
 .member-name { 
-	font-size: 18px; 
+	font-size: 24px; 
 	color: #4b4b4b !important; 
 	font-weight: 600; 
 	text-transform: uppercase; 
@@ -143,7 +167,7 @@ body, html {
 }
 
 .member-department { 
-	font-size: 12px; 
+	font-size: 16px; 
 	margin: 3px 0 10px 0; 
 	color: #279fbb; 
 	font-weight: lighter; 
@@ -151,7 +175,7 @@ body, html {
 }
 
 .member-term { 
-	font-size: 11px; 
+	font-size: 12px; 
 	margin: 3px 0 10px 0; 
 	color: #888; 
 	font-weight: lighter; 
