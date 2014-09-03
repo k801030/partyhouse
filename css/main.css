@@ -17,7 +17,7 @@ body, html {
 .floor {
 	position: relative;
 	width: 100%;
-	height: 640px;
+	height: 720px;
 	box-shadow:4px 4px 3px rgba(20%,20%,40%,0.5);
 }
 .floor p.subtitle{
@@ -49,31 +49,38 @@ body, html {
 
 
 .profile {
-	margin: 10px;
+	margin: 10px 0 10px 0;
 }
 
-.info-text {
+.info-block {
 	position: relative;
+	height: 120px;
 	margin: 20px 20px 10px 20px;
 	font-size: 18px;
 	text-align: center;
 }
-.info-text.left{
+.info-block.left{
 	text-align: right;
 }
-.info-text.right{
+.info-block.right{
 	text-align: left;
 }
 
+
 .info-img {
 	position: relative;
-	float: left;
 	width: 100px;
 	height: 100px;
 	margin: 10px 20px 20px 20px;
-	border: 2px #bbb solid;
 	box-shadow: 1px 1px 1px 0.5px rgba(20%,20%,40%,0.5);
 }
+.info-block.left  > .info-img{
+	float: right;
+}
+.info-block.right  > .info-img{
+	float: left;
+}
+
 .img-right, .img-left{
 	position: relative;
 	-webkit-border-radius: 5px;
