@@ -10,7 +10,6 @@
 	<link href="css/main.css" rel="stylesheet" />
 	
  	<script src="http://code.jquery.com/jquery.js"></script>
- 	<script src="js/jquery.scrollTo-min.js"></script>
 
 	<title>開趴囉</title>
 </head>
@@ -21,13 +20,13 @@
 	<div class="header navbar-fixed-top">
 		<div class="container">
 			<nav id="main-nav" class="main-nav navbar-right" role="navigation">
-				<div class="navbar-collapse collapse">
+				<div id='header-bar' class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
-						<li class="active nav-item"><a class="scrollto" href="#zone-beginning">Home</a></li>
-                        <li class="nav-item"><a class="scrollto" href="#zone-2f">Floor 2</a></li>
-                        <li class="nav-item"><a class="scrollto" href="#zone-3f">Floor 3</a></li>
-                        <li class="nav-item"><a class="scrollto" href="#zone-4f">Floor 4</a></li>
-                        <li class="nav-item last"><a class="scrollto" href="#contact">Contact</a></li>
+						<li class="nav-item"><a class="scrollto" target="#zone-beginning">Home</a></li>
+                        <li class="nav-item"><a class="scrollto" target="#zone-2f">Floor 2</a></li>
+                        <li class="nav-item"><a class="scrollto" target="#zone-3f">Floor 3</a></li>
+                        <li class="nav-item"><a class="scrollto" target="#zone-4f">Floor 4</a></li>
+                        <li class="nav-item last"><a class="scrollto" target="#contact">Contact</a></li>
 					</ul>
 				</div>
 			</nav>
@@ -41,10 +40,9 @@
 	</div>
 
 	<section id="zone-2f" class="floor second">
+		<p class="subtitle">2 Floor </p>
 		<div class="container">
 			<div class="row">
-				<p class="subtitle">2 Floor </p>
-
 				<div class="col-md-12 profile">
 					<div class="col-md-6">
 						<div class="info-block left">
@@ -100,6 +98,14 @@
 	</section>
 
 	<section id="zone-4f" class="floor fourth">
+		<div class="container">
+			<div class="row">
+				<p class="subtitle">4 Floor </p>
+			</div>
+		</div>
+	</section>
+
+	<section id="contact" class="floor fourth">
 		<div class="container">
 			<div class="row">
 				<p class="subtitle">4 Floor </p>

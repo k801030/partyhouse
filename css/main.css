@@ -25,6 +25,7 @@ body, html {
 
 .navbar-nav > li > a {
 	color: #333;
+	cursor: pointer;
 }
 
 .navbar-nav > li.active > a ,.navbar-nav > li:hover > a{
@@ -48,8 +49,8 @@ body, html {
 .floor p.subtitle{
 	font-size: 42px;
 	text-align: center;
-	color: rgba(1,1,1,0.5);
-	margin: 10px;
+	color: #fff;
+	margin: 0 0 10px 0;
 	padding: 20px 0 20px 0;
 	
 	background-color: #29afdf;
