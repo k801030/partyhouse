@@ -10,6 +10,7 @@
 	<link href="css/main.css" rel="stylesheet" />
 	
  	<script src="http://code.jquery.com/jquery.js"></script>
+ 	<script src="js/jquery.scrollTo-min.js"></script>
 
 	<title>開趴囉</title>
 </head>
@@ -17,15 +18,29 @@
 <body>
 	
 	<!-- Header -->
-	<div id="zone-beginning" class="header">
+	<div class="header navbar-fixed-top">
 		<div class="container">
-			<div class="row">
-
-			</div>
+			<nav id="main-nav" class="main-nav navbar-right" role="navigation">
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li class="active nav-item"><a class="scrollto" href="#zone-beginning">Home</a></li>
+                        <li class="nav-item"><a class="scrollto" href="#zone-2f">Floor 2</a></li>
+                        <li class="nav-item"><a class="scrollto" href="#zone-3f">Floor 3</a></li>
+                        <li class="nav-item"><a class="scrollto" href="#zone-4f">Floor 4</a></li>
+                        <li class="nav-item last"><a class="scrollto" href="#contact">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
 		</div>
 	</div>
 
-	<div id="zone-2f" class="floor second">
+	<div id="zone-beginning" class="first">
+		<div class="container">
+
+		</div>
+	</div>
+
+	<section id="zone-2f" class="floor second">
 		<div class="container">
 			<div class="row">
 				<p class="subtitle">2 Floor </p>
@@ -74,23 +89,23 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 
-	<div id="zone-3f" class="floor third">
+	<section id="zone-3f" class="floor third section">
 		<div class="container">
 			<div class="row">
 				<p class="subtitle">3 Floor </p>
 			</div>
 		</div>
-	</div>
+	</section>
 
-	<div id="zone-4f" class="floor fourth">
+	<section id="zone-4f" class="floor fourth">
 		<div class="container">
 			<div class="row">
 				<p class="subtitle">4 Floor </p>
 			</div>
 		</div>
-	</div>
+	</section>
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
@@ -112,6 +127,8 @@
         	offset: 100,
         	repeat: false
         });
+
+
 
     });       
 </script>
