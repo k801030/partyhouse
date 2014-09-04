@@ -107,22 +107,17 @@ function checkValid(name, message){
 	}
 
 	if(name.val() != "" && message.val() != ""){
-		var name = $( "#form").find("input[id='name']").val();
-		var message = $( "#form").find("input[id='message']").val();
-		var url = "http://www.csie.ntu.edu.tw/~b99902079/partyhouse/message.php";
-		$.ajax({
-			type: 'POST',
-			url: url,
-			crossDomain: true,
-			data: { name : name, message : message},
-			dataType: 'json',
-			success:function(){
-				console.log("s");
-			},
-			error: function(){
-				console.log("e");
-			}
+
+		crossDomainPost();
+		$('.feedback-alert').animate({
+			opacity: 1
 		});
+		$('.feedback-alert').delay(1000).animate({
+			opacity: 0
+		}, 1000);
+
+		clear_form(name);
+		clear_form(message);
 	}
 }
 
@@ -131,5 +126,52 @@ function warning(obj,text){
 		placeholder : text
 	});
 }
+function clear_form(obj){
+	obj.prop({
+		placeholder : "",
+		value : ""
+	});
+}
 
 
+
+
+//
+
+function crossDomainPost() {
+  var url = "https://docs.google.com/forms/d/1eIZN1ucPDnS2vEAjXo6w-OvdR5rFzuyQzAhNFz609l4/formResponse";
+  var entry_1 = 'entry_871423001';
+  var entry_2 = 'entry_2070016568';
+  var name = $( "#form").find("input[id='name']").val();
+  var message = $( "#form").find("textarea[id='message']").val();
+
+  // Add the iframe with a unique name
+  var iframe = document.createElement("iframe");
+  var uniqueString = "CHANGE_THIS_TO_SOME_UNIQUE_STRING";
+  document.body.appendChild(iframe);
+  iframe.style.display = "none";
+  iframe.contentWindow.name = uniqueString;
+
+  // construct a form with hidden inputs, targeting the iframe
+  var form = document.createElement("form");
+  form.target = uniqueString;
+  form.action = url;
+  form.method = "POST";
+
+  // repeat for each parameter
+  var input = document.createElement("input");
+  input.type = "hidden";
+  input.name = entry_1;
+  input.value = name;
+  form.appendChild(input);
+
+  var input = document.createElement("input");
+  input.type = "hidden";
+  input.name = entry_2;
+  input.value = message;
+  form.appendChild(input);
+
+
+  document.body.appendChild(form);
+  form.submit();
+}

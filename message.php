@@ -11,8 +11,8 @@
 	$name = $_POST['name'];
 	$message = $_POST['message'];
 	$fp = fopen('message.txt','a');
-	fwrite($fp,name."\n");
-	fwrite($fp,message."\n");
+	fwrite($fp,$name."\n");
+	fwrite($fp,$message."\n");
 	$next_mark = "-------/*&-------\n";
 	fwrite($fp, $next_mark);
 	fclose($fp);
