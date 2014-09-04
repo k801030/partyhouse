@@ -17,6 +17,16 @@ body, html {
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
 }
 
+.nav-logo{
+	cursor: pointer;
+	margin: 5px 0 0 20px;
+	float: left;
+	width: 60px;
+	height: 60px;
+	background: url('../images/logo.jpg') center center no-repeat;
+	background-size: 60px auto;
+}
+
 .main-nav {
 	padding: 10px;
 }
@@ -43,6 +53,7 @@ body, html {
 	height: 100%;
 	background: url(../images/bg.jpg) no-repeat center center scroll;
 	background-size: cover;
+	opacity: 0;
 }
 
 .home-textbox {
@@ -249,7 +260,6 @@ body, html {
 	padding: 10px 30px 30px 30px;
 	background-color: #fff;
 	height: 520px;
-	
 }
 
 .map-content {

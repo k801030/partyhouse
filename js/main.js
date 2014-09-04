@@ -1,21 +1,57 @@
 $(document).ready(function(){
-	//button scroll animation
+
+	// viewport plugin
+
+	$('.img-right').addClass('myHidden').viewportChecker({
+		classToAdd: 'animated-2s fadeInRight',
+		offset    : 100,
+		repeat    : false
+    });
+
+    $('.img-left').addClass('myHidden').viewportChecker({
+		classToAdd: 'animated-2s fadeInLeft',
+		offset    : 100,
+		repeat    : false
+    });
+
+    $('.trick').viewportChecker({
+		classToAdd: 'animated-2s hinge',
+		offset    : 300,
+		repeat    : false
+    });
+
+	// home     
+
+	$('.home').delay(500).animate({
+		opacity : 1,
+	},1000,function(){
+		 $('.home-textbox').delay(500).animate({
+	    	opacity : 1,
+	    	left : '-=50px'
+	    },700);
+	});
+
+
+	// button scroll animation
+
     $('.scrollto').click(function(){
     	var target = $(this).attr('target');
     	var offset =  65;
-    	console.log($(target).offset().top);
     	$('html, body').animate({
     		'scrollTop': $(target).offset().top - offset
     	}, 500);
     });
 
-    //scroll animation
+    // scroll animation
+
     $(document).on('scroll', onScroll);
 
-    //google map
+    // google map
+
     google.maps.event.addDomListener(window, 'load', initialize);
 
     // form check
+    
     $('#form .form-control').keypress(function(){
 		var val = $(this).val();
 		if(val != ""){
@@ -24,7 +60,6 @@ $(document).ready(function(){
 			})
 		}
 	});
-
 
 	$('#submit').click(function(){
 		var name = $('#form #name');

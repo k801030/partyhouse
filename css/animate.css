@@ -2426,9 +2426,13 @@ Copyright (c) 2014 Daniel Eden
   }
 
   100% {
-    -webkit-transform: translate3d(0, 700px, 0);
-            transform: translate3d(0, 700px, 0);
-    opacity: 0;
+    -webkit-transform: rotate3d(0, 0, 1, 60deg);
+            transform: rotate3d(0, 0, 1, 60deg);
+    -webkit-transform-origin: top left;
+            transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    opacity: 1;
   }
 }
 
