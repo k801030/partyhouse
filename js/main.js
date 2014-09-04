@@ -36,7 +36,7 @@ $(document).ready(function(){
 function onScroll(event){
 	var scrollPos = $(document).scrollTop();
 	$('#header-bar li').each(function(){
-		var offset = 120;
+		var offset = 180;
 		var target = $(this).find('a').attr('target');
 		if ( scrollPos + offset > $(target).position().top && 
 			 scrollPos + offset < $(target).position().top + $(target).height() ){

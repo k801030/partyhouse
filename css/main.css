@@ -44,6 +44,13 @@ body, html {
 	background: url(../images/bg.jpg) no-repeat center center scroll;
 	background-size: cover;
 }
+
+.home-textbox {
+	margin-top: 15px;
+	background-color: rgba(1,1,1,0.5);
+	opacity: 0;
+}
+
 .bg-pattern {
 	background-image: url('../images/pattern-1.png');
 	background-repeat: repeat;

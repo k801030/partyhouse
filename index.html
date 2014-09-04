@@ -34,9 +34,13 @@
 	</div>
 
 	<div id="zone-beginning" class="home">
-		<div class="container col-md-offset-1 col-md-10">
-			<p class="title ">test</p>
-			<p class="content ">etsetset</p>
+		<div class="col-md-offset-2 col-md-5 home-textbox">
+			<p class="title">最新消息</p>
+			<p class="content">
+				目前剛入住 開學後要一直辦趴體嚕。
+				楊森聽說要出錢，石頭人要打仗，肥伊要睡覺，鵬均自己玩貓。
+				可是阿斌還不知道會不會來住zz
+			</p>
 		</div>
 	</div>
 
@@ -266,7 +270,10 @@
         	repeat: false
         });
 
-
+        $('.home-textbox').delay(1000).animate({
+        	opacity : 1,
+        	left : '-=50px'
+        },1000);
 
     });       
 </script>
