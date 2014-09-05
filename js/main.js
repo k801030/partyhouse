@@ -36,7 +36,7 @@ $(document).ready(function(){
 
     $('.scrollto').click(function(){
     	var target = $(this).attr('target');
-    	var offset =  65;
+    	var offset =  70;
     	$('html, body').animate({
     		'scrollTop': $(target).offset().top - offset
     	}, 500);
