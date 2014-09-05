@@ -1,4 +1,5 @@
 body, html {
+	font-family: 'Arimo', sans-serif, "微軟正黑體";
 	height: 100%;
 }
 
@@ -23,7 +24,7 @@ body, html {
 	float: left;
 	width: 60px;
 	height: 60px;
-	background: url('../images/logo.jpg') center center no-repeat;
+	background: url('../images/logo.png') center center no-repeat;
 	background-size: 60px auto;
 }
 
@@ -36,6 +37,7 @@ body, html {
 }
 
 .navbar-nav > li > a {
+	font-family: 'Montserrat', sans-serif, "微軟正黑體";
 	color: #333;
 	cursor: pointer;
 }
