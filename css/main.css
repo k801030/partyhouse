@@ -180,24 +180,48 @@ body, html {
 	border-radius: 5px;
 }
 
-/* ====== Profile ====== */
+.img-left {
+	float: right;
+}
 
-#chris-chen {
+.img-right {
+	float: left;
+}
+
+.img {
+	margin: 0 10% 0 10%;
 	width: auto;
 	height: 240px;
-	background-image: url(../images/profile/chrischen.png) ;
 	background-repeat: no-repeat;
 	background-size:  auto 240px;
 	z-index: 100;
 }
 
-#lao-pao-gi {
-	width: auto;
-	height: 240px;
-	background-image: url(../images/profile/laopaogi.jpg);
-	background-repeat: no-repeat;
-	background-size:  auto 240px;
-	z-index: 100;
+/* ====== Profile ====== */
+
+
+#f2-1 {
+	background-image: url(../images/profile/f2-1.png) ;
+}
+
+#f2-2 {
+	background-image: url(../images/profile/f2-2.png) ;
+}
+
+#f3-1 {
+	background-image: url(../images/profile/f3-1.png) ;
+}
+
+#f3-2 {
+	background-image: url(../images/profile/f3-2.png) ;
+}
+
+#f4-1 {
+	background-image: url(../images/profile/f4-1.png) ;
+}
+
+#f4-2 {
+	background-image: url(../images/profile/f4-2.png) ;
 }
 
 
