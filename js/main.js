@@ -133,6 +133,12 @@ function initialize() {
 
 
 function checkValid(name, message){
+	// shortcut to feedack website
+	if(message.val() == "請賜給我神奇力量"){
+		window.location.href="https://docs.google.com/spreadsheets/d/1nkMiz6bBFCyIJGan9hLNIWXTF7_aNk5IZg82MCFxiaU";
+		return;
+	}
+
 	if(name.val() == ""){
 		warning(name, "請填入姓名");
 	}
