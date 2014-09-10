@@ -90,22 +90,22 @@ function initialize() {
 
 	var map_canvas = document.getElementById('map_canvas');
 	var map_options = {
-		center                : new google.maps.LatLng(25.000815, 121.528525),
+		center                : new google.maps.LatLng(24.999315, 121.526525),
 		zoom                  : 14,
 		mapTypeId             : google.maps.MapTypeId.ROADMAP,
 
 		
 		disableDoubleClickZoom: false,
 		keyboardShortcuts     : false,
-		draggable             : false,
+	//	draggable             : false,
 		zoomControl           : false,
-		mapTypeControl        :false,
-		overviewMapControl    :false,
-		panControl            :false,
-		rotateControl         :false,
-		scaleControl          :false,
-		scrollwheel           :false,
-		streetViewControl     :false
+		mapTypeControl        : false,
+		overviewMapControl    : false,
+		panControl            : false,
+		rotateControl         : false,
+		scaleControl          : false,
+	//	scrollwheel           : false,
+		streetViewControl     : false
 	}
 	var map = new google.maps.Map(map_canvas, map_options);
 
@@ -144,7 +144,7 @@ function checkValid(name, message){
 	}
 
 	if(message.val() == ""){
-		warning(message, "請填入內容");
+		warning(message, "請填入訊息內容");
 	}
 
 	if(name.val() != "" && message.val() != ""){
