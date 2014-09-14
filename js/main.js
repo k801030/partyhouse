@@ -104,7 +104,7 @@ function initialize() {
 		panControl            : false,
 		rotateControl         : false,
 		scaleControl          : false,
-	//	scrollwheel           : false,
+		scrollwheel           : false,
 		streetViewControl     : false
 	}
 	var map = new google.maps.Map(map_canvas, map_options);
