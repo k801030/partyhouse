@@ -84,7 +84,7 @@ body, html {
 .floor {
 	position: relative;
 	width: 100%;
-	padding-bottom: 30px;
+	padding-bottom: 60px;
 }
 .floor p.subtitle{
 	font-size: 42px;
