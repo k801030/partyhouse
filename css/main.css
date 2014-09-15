@@ -267,6 +267,15 @@ body, html {
 	text-align: right;
 }
 
+.fbicon {
+	cursor: pointer;
+	margin: 0px 5px 5px 5px; 
+	height: 24px;
+	width: 24px;
+}
+.fbicon:hover {
+	opacity: 0.8;
+}
 .member-name { 
 	font-size: 24px; 
 	color: #444; 

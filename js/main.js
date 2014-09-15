@@ -1,5 +1,31 @@
 $(document).ready(function(){
 
+
+	//fb redirect
+	$('.fbicon').click(function(){
+		var id = $(this).attr('id');
+		var link_tail;
+		switch(id){
+			case 'fb2-2':
+				link_tail = 'z20033002';
+			break;
+			case 'fb3-1':
+				link_tail = 'yuyi.chen2';
+			break;
+			case 'fb3-2':
+				link_tail = 'profile.php?id=100001261402060';
+			break;
+			case 'fb4-1':
+				link_tail = 'profile.php?id=1456005632';
+			break;
+			case 'fb4-2':
+				link_tail = 'k801030';
+			break;
+		}
+		var link = 'https://www.facebook.com/'+link_tail;
+		window.open(link,'_blank');
+	});
+
 	// viewport plugin
 
 	$('.img-right').addClass('myHidden').viewportChecker({
