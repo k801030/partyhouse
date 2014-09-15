@@ -22,7 +22,7 @@ $(document).ready(function(){
 				link_tail = 'k801030';
 			break;
 		}
-		
+
 		var link = 'https://www.facebook.com/'+link_tail;
 		window.open(link,'_blank');
 	});
@@ -161,7 +161,7 @@ function initialize() {
 
 function checkValid(name, message){
 	// shortcut to feedack website
-	if(message.val() == "請賜給我神奇力量"){
+	if(message.val() == "我想偷看訊息"){
 		window.location.href="https://docs.google.com/spreadsheets/d/1nkMiz6bBFCyIJGan9hLNIWXTF7_aNk5IZg82MCFxiaU";
 		return;
 	}
