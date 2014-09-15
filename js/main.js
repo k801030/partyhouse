@@ -2,8 +2,8 @@ $(document).ready(function(){
 
 
 	//fb redirect
-	$('.fbicon').click(function(){
-		var id = $(this).attr('id');
+	$('.member-name').click(function(){
+		var id = $(this).find('img').attr('id');
 		var link_tail;
 		switch(id){
 			case 'fb2-2':
@@ -22,6 +22,7 @@ $(document).ready(function(){
 				link_tail = 'k801030';
 			break;
 		}
+		
 		var link = 'https://www.facebook.com/'+link_tail;
 		window.open(link,'_blank');
 	});

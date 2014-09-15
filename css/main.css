@@ -268,15 +268,14 @@ body, html {
 }
 
 .fbicon {
-	cursor: pointer;
+	opacity: 0.85;
 	margin: 0px 5px 5px 5px; 
 	height: 24px;
 	width: 24px;
 }
-.fbicon:hover {
-	opacity: 0.8;
-}
+
 .member-name { 
+	cursor: pointer;
 	font-size: 24px; 
 	color: #444; 
 	font-weight: 600; 
@@ -284,6 +283,18 @@ body, html {
 	margin: 0px 0 10px 0px; 
 	line-height: 20px;
 }
+
+.member-name.unclick {
+	cursor: default;
+}
+
+.member-name:hover {
+	color: #000;
+}
+.member-name:hover > .fbicon {
+	opacity: 1;
+}
+
 .member-department { 
 	font-size: 16px; 
 	margin: 3px 0 14px 0; 
@@ -301,6 +312,11 @@ body, html {
 .member-name.brightness {
 	color: #e8e8e8;
 }
+.member-name.brightness:hover {
+	color: #fff;
+	box-shadow: 
+}
+
 .member-department.brightness { 
 	color: #1b6e7b;
 }
