@@ -396,6 +396,14 @@ body, html {
 }
 
 
+/* color */
+p.red {
+	display: inline;
+	color: red;
+
+}
+
+
 .feedback-alert {
 	opacity: 0;
 }
