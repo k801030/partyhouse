@@ -261,10 +261,12 @@ body, html {
 }
 
 .right{
+	float: right;
 	font-size: 18px;
 	font-weight: lighter;
 	color: #fff;
 	text-align: right;
+	margin: 10px 5px 5px 5px;
 }
 
 .fbicon {
