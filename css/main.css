@@ -34,7 +34,7 @@ body, html {
 	margin: 20px;
 	float: left;
 	font-size: 18px;
-	color: #55bada;
+	color: #7a4ca2;
 
 }
 
@@ -53,7 +53,7 @@ body, html {
 }
 
 .navbar-nav > li.active > a ,.navbar-nav > li:hover > a{
-	color: #55bada;
+	color: #7a4ca2;
 	background-color: #fff;
 }
 
@@ -113,11 +113,26 @@ body, html {
 }
 .floor.third{
   z-index: 300;
-  background-color: #78BAC7;
+  background-color: #444176;
 }
 .floor.fourth{
   z-index: 400;
 
+}
+
+.floor.bottom{
+	background-image: -webkit-gradient(
+	linear,
+	left top,
+	left bottom,
+	color-stop(0, #3A296B),
+	color-stop(1, #3D2645)
+);
+background-image: -o-linear-gradient(bottom, #3A296B 0%, #3D2645 100%);
+background-image: -moz-linear-gradient(bottom, #3A296B 0%, #3D2645 100%);
+background-image: -webkit-linear-gradient(bottom, #3A296B 0%, #3D2645 100%);
+background-image: -ms-linear-gradient(bottom, #3A296B 0%, #3D2645 100%);
+background-image: linear-gradient(to bottom, #3A296B 0%, #3D2645 100%);
 }
 
 
@@ -300,7 +315,7 @@ body, html {
 .member-department { 
 	font-size: 16px; 
 	margin: 3px 0 14px 0; 
-	color: #279fbb; 
+	color: #9464d6; 
 	font-weight: lighter; 
 	text-transform: uppercase;
 }
@@ -320,7 +335,7 @@ body, html {
 }
 
 .member-department.brightness { 
-	color: #1b6e7b;
+	color: #9f76d6;
 }
 .member-term.brightness{
 	color: #ddd;
@@ -329,7 +344,7 @@ body, html {
 /* ====== MAPS ====== */
 .contact-map {
 	height: 520px;
-	background-color: #8dd7e0;
+	background-color: #7a4ca2;
 	
 }
 .contact-info {
@@ -343,9 +358,8 @@ body, html {
 }
 .map-content > p{
 	text-align: center;
-	color: #333;
 	font-weight: 500;
-	color: #555;
+	color: #ddd;
 	padding: 0px 0 2px 0;
 	font-size: 16px;
 }
@@ -356,7 +370,7 @@ body, html {
 
 .contact-title {
 	text-align: center;
-	color: #555;
+	color: #ddd;
 	font-weight: 00;
 	padding: 10px;
 	font-size: 24px;
