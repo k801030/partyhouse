@@ -304,7 +304,7 @@ background-image: linear-gradient(to bottom, #3A296B 0%, #3D2645 100%);
 }
 
 .member-name:hover {
-	color: #000;
+	color: #9858bc;
 }
 .member-name:hover > .fbicon {
 	opacity: 1;
@@ -328,7 +328,7 @@ background-image: linear-gradient(to bottom, #3A296B 0%, #3D2645 100%);
 	color: #e8e8e8;
 }
 .member-name.brightness:hover {
-	color: #fff;
+	color: #9858bc;
 	box-shadow: 
 }
 
@@ -368,10 +368,14 @@ background-image: linear-gradient(to bottom, #3A296B 0%, #3D2645 100%);
 
 .contact-title {
 	text-align: center;
-	color: #ddd;
+	color: 555;
 	font-weight: 00;
 	padding: 10px;
 	font-size: 24px;
+}
+
+.map-content > .contact-title {
+	color: #ddd;
 }
 
 .contact-form {
