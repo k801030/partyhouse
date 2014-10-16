@@ -20,7 +20,7 @@ $(document).ready(function(){
 				break;
 			case 'fb4-1':
 				link_tail = 'k801030';
-				break;
+				break; 
 		}
 
 		var link = 'https://www.facebook.com/'+link_tail;
