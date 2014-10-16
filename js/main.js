@@ -6,21 +6,21 @@ $(document).ready(function(){
 		var id = $(this).find('img').attr('id');
 		var link_tail;
 		switch(id){
+			case 'fb2-1':
+				link_tail = 'profile.php?id=1456005632';
+				break;
 			case 'fb2-2':
 				link_tail = 'z20033002';
-			break;
+				break;
 			case 'fb3-1':
 				link_tail = 'yuyi.chen2';
-			break;
+				break;
 			case 'fb3-2':
 				link_tail = 'profile.php?id=100001261402060';
-			break;
+				break;
 			case 'fb4-1':
-				link_tail = 'profile.php?id=1456005632';
-			break;
-			case 'fb4-2':
 				link_tail = 'k801030';
-			break;
+				break;
 		}
 
 		var link = 'https://www.facebook.com/'+link_tail;
